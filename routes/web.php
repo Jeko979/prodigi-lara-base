@@ -17,3 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+Route::get('/orders',[OrderController::class, 'index']);
+Route::get('/orders/create',[OrderController::class, 'create']);
