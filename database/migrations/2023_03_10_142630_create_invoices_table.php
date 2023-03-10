@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('code');
             $table->integer('total');
+            $table->string('payment',50);
             $table->timestamps();
         });
     }
